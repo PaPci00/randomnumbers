@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liczby</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="gora">ZGADNIJ WYLOSOWANĄ LICZBĘ!</div>
+    <p>Od ilu losować?</p>
+    <input type="number" id="od">
+    <p>Do ilu losować?</p>
+    <input type="number" id="doo" onchange="zakres()">
+    <p>Wpisz swoją liczbę</p>
+    <input type="number" id="moja" onchange="losowanie()">
+    <div id="wynik"></div>
+
+    <br>
+
+    <!-- <div id="random">Losowa liczba:</div> -->
+    <br>
+    <input type="button" value="losuj" onclick="losowanie()">
+    <br><br>
+    <div id="proby">Twoje próby liczb: </div>
+    <br>
+</body>
+</html>
